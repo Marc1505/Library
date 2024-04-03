@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIGN UP</title>
+	<title>Inscrivez-vous</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
      <form action="signup-check.php" method="post">
-     	<h2>SIGN UP</h2>
+     	<h2>Inscivez-vous</h2>
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
@@ -15,16 +15,16 @@
                <p class="success"><?php echo $_GET['success']; ?></p>
           <?php } ?>
 
-          <label>Name</label>
+          <label>Nom</label>
           <?php if (isset($_GET['name'])) { ?>
                <input type="text" 
                       name="name" 
-                      placeholder="Name"
+                      placeholder="Nom"
                       value="<?php echo $_GET['name']; ?>"><br>
           <?php }else{ ?>
                <input type="text" 
                       name="name" 
-                      placeholder="Name"><br>
+                      placeholder="Nom"><br>
           <?php }?>
 
           <label>User Name</label>
@@ -40,18 +40,18 @@
           <?php }?>
 
 
-     	<label>Password</label>
+     	<label>Mot de Passe</label>
      	<input type="password" 
                  name="password" 
-                 placeholder="Password"><br>
+                 placeholder="Mot de Passe"><br>
 
-          <label>Re Password</label>
+          <label>Confirmation du Mot de Passe</label>
           <input type="password" 
                  name="re_password" 
-                 placeholder="Re_Password"><br>
+                 placeholder="Confirmation du Mot de Passe"><br>
 
-     	<button type="submit">Sign Up</button>
-          <a href="login_page.php" class="ca">Already have an account?</a>
+     	<button type="submit">Inscription</button>
+          <a href="login_page.php" class="ca">Vous avez déjà un compte ?</a>
      </form>
 </body>
 </html>

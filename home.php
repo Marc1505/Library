@@ -11,10 +11,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-     <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
+     <h1>Bonjour, <?php echo $_SESSION['name']; ?></h1>
      <nav class="home-nav">
-     	<a href="change-password.php">Change Password</a>
-        <a href="logout.php">Logout</a>
+     	<a href="change-password.php">Changer de Mot de Passe</a>
+        <a href="logout.php">Déconnexion</a>
      </nav>
      
 </body>

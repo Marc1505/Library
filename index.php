@@ -104,7 +104,7 @@ session_start();
             xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4 && xhr.status == 200) {
-                    console.log(xhr.responseText); // Response from server
+                    console.log(xhr.responseText); 
                 }
             };
             xhr.send(params);
