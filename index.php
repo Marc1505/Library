@@ -68,7 +68,6 @@ session_start();
                     const thumbnail = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : '';
                     const bookDiv = document.createElement('div');
 
-                    
                     <?php if (isset($_SESSION['name'])) { ?>
                         bookDiv.innerHTML = `
                             <div>
