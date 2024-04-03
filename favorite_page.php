@@ -75,7 +75,7 @@ include "db_conn.php";
             if (mysqli_query($conn, $sql)) {
                 header("Location: {$_SERVER['PHP_SELF']}");
                 exit();
-                // Optionally, you can refresh the page or do any other action after deletion.
+                
             } else {
                 echo "Error deleting favorite: " . mysqli_error($conn);
             }

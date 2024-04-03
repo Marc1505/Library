@@ -29,7 +29,7 @@ if (isset($_POST['op']) && isset($_POST['np'])
       header("Location: change-password.php?error=The confirmation password  does not match");
 	  exit();
     }else {
-    	// hashing the password
+    	
     	$op = md5($op);
     	$np = md5($np);
         $id = $_SESSION['id'];
