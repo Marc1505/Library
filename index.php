@@ -72,7 +72,7 @@ session_start();
                         bookDiv.innerHTML = `
                             <div>
                                 <img src="${thumbnail}" alt="Couverture du livre">
-                                <button onclick="addBookToDatabase('${title}')">Add to Favoritex</button>
+                                <button onclick="addBookToDatabase('${title}')">Ajoutez aux Favoris</button>
                                 <h3>${title}</h3>
                                 <p>Auteur(s): ${authors}</p>
                             </div>
