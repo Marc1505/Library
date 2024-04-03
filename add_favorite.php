@@ -9,12 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_name = $_SESSION['user_name'];
     
     
+    
+    
     $sql = "INSERT INTO favoris (book_name, user_name) VALUES ('$book_name', '$user_name')";
     
     
     if (mysqli_query($conn, $sql)) {
         echo "Book added successfully.";
-    } else {
+    } else {    
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
